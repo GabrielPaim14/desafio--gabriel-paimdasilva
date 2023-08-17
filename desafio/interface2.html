@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Lanchonete</title>
+</head>
+<body>
+    <h1>Caixa de Lanchonete</h1>
+
+    <h2>Cardápio</h2>
+    <table>
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>cafe</td>
+            <td>Café</td>
+            <td>R$ 3,00</td>
+        </tr>
+        <tr>
+            <td>chantily</td>
+            <td>Chantily (extra do Café)</td>
+            <td>R$ 1,50</td>
+        </tr>
+        <tr>
+            <td>suco</td>
+            <td>Suco Natural</td>
+            <td>R$ 6,20</td>
+        </tr>
+        <tr>
+            <td>sanduiche</td>
+            <td>Sanduíche</td>
+            <td>R$ 6,50</td>
+        </tr>
+        <tr>
+            <td>queijo</td>
+            <td>Queijo (extra do Sanduíche)</td>
+            <td>R$ 2,00</td>
+        </tr>
+        <tr>
+            <td>salgado</td>
+            <td>Salgado</td>
+            <td>R$ 7,25</td>
+        </tr>
+        <tr>
+            <td>combo1</td>
+            <td>1 Suco e 1 Sanduíche</td>
+            <td>R$ 9,50</td>
+        </tr>
+        <tr>
+            <td>combo2</td>
+            <td>1 Café e 1 Sanduíche</td>
+            <td>R$ 7,50</td>
+        </tr>
+    </table>
+    <br>
+    <label for="item">Código do Item:</label>
+    <input type="text" id="item">
+    <label for="payment">Forma de Pagamento:</label>
+    <input type="text" id="payment">
+    <button id="add">Adicionar ao Pedido</button>
+    <h2>Pedido:</h2>
+    <ul id="order"></ul>
+    <h3>Total: <span id="total">0</span></h3>
+    <button id="checkout">Fechar Pedido</button>
+    
+    <script src="caixa2.js"></script>
+</body>
+</html>
